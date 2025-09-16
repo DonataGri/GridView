@@ -5,7 +5,11 @@ export default function GridView({ buttons }) {
   return (
     <div className="grid">
       {buttons.map(([gridRow, gridColumn]) => (
-        <Button gridRow={gridRow} gridColumn={gridColumn} />
+        <Button
+          key={`${gridRow}-${gridColumn}`}
+          gridRow={gridRow}
+          gridColumn={gridColumn}
+        />
       ))}
     </div>
   );
