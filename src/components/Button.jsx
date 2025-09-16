@@ -14,8 +14,6 @@ export default function Button({ gridColumn, gridRow }) {
       return;
     }
 
-    console.log("hi");
-
     setActive(true);
 
     timeoutRef.current = setTimeout(() => {
